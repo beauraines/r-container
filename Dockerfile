@@ -19,6 +19,8 @@ RUN install2.r --error  choroplethr
 RUN install2.r --error  choroplethrMaps
 RUN install2.r --error  AzureStor
 RUN install2.r --error  geofacet
+## Installs VSCode support I'm not sure if this should be here or somewhere else
+RUN install2.r --error languageserver
 RUN R -e "hrbrthemes::import_roboto_condensed()" && \
   cp /usr/local/lib/R/site-library/hrbrthemes/fonts/roboto-condensed/*.ttf /usr/local/share/fonts/.
 
