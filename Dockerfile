@@ -4,7 +4,7 @@ FROM base as pandoc
 RUN apt update && \
     apt install -y pandoc fonts-humor-sans
 RUN apt update && \
-    apt install -y libjpeg-dev libpng-dev libssl-dev libxml2-dev libcairo2-dev libfontconfig1-dev vim libgdal-dev libudunits2-dev
+    apt install -y libjpeg-dev libpng-dev libssl-dev libxml2-dev libcairo2-dev libfontconfig1-dev vim libgdal-dev libudunits2-dev libtk8.6  libxt6
 ENV TZ=America/Los_Angeles
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
