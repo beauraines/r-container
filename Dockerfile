@@ -22,4 +22,5 @@ RUN install2.r --error  geofacet
 RUN R -e "hrbrthemes::import_roboto_condensed()" && \
   cp /usr/local/lib/R/site-library/hrbrthemes/fonts/roboto-condensed/*.ttf /usr/local/share/fonts/.
 
+USER rstudio
 RUN mkdir /home/rstudio/projects
