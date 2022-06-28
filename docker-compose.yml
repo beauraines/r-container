@@ -1,0 +1,10 @@
+services:
+  rstudio:
+    image: beauraines/r-container
+    ports: 
+      - 8888:8787
+    volumes:
+      - ~/projects:/home/rstudio/projects
+    container_name: rstudio_server 
+    environment:
+      PASSWORD: password
